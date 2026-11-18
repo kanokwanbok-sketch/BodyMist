@@ -1,0 +1,102 @@
+[
+  {
+    "id": "bs-fresh-30",
+    "name": "น้ำหอมฉีดตัว Fresh",
+    "mood": "fresh",
+    "type": "spray",
+    "size": "30ml",
+    "price": 89,
+    "image": "images/fresh.jpg",
+    "description": "กลิ่นหอมสะอาด สดชื่น ผสานโน้ตของซิตรัสและใบชาเขียว ให้ความรู้สึกโปร่งสบายเหมือนเพิ่งอาบน้ำเสร็จใหม่ ขนาดพกพาสะดวก"
+  },
+  {
+    "id": "bs-fresh-100",
+    "name": "น้ำหอมฉีดตัว Fresh",
+    "mood": "fresh",
+    "type": "spray",
+    "size": "100ml",
+    "price": 199,
+    "image": "images/fresh.jpg",
+    "description": "กลิ่นหอมสะอาด สดชื่น ผสานโน้ตของซิตรัสและใบชาเขียว ให้ความรู้สึกโปร่งสบายเหมือนเพิ่งอาบน้ำเสร็จใหม่ ขวดใหญ่คุ้มค่าใช้ได้ทุกวัน"
+  },
+  {
+    "id": "bs-sweet-30",
+    "name": "น้ำหอมฉีดตัว Sweet",
+    "mood": "sweet",
+    "type": "spray",
+    "size": "30ml",
+    "price": 89,
+    "image": "images/sweet.jpg",
+    "description": "กลิ่นหอมหวานละมุนลุ่มลึกจากดอกพีโอนี วานิลลาอ่อน และมัสก์ขาว ชวนน่าหลงใหลแบบไม่เลี่ยน ขนาดพกพาง่ายเติมได้ระหว่างวัน"
+  },
+  {
+    "id": "bs-sweet-100",
+    "name": "น้ำหอมฉีดตัว Sweet",
+    "mood": "sweet",
+    "type": "spray",
+    "size": "100ml",
+    "price": 199,
+    "image": "images/sweet.jpg",
+    "description": "กลิ่นหอมหวานละมุนลุ่มลึกจากดอกพีโอนี วานิลลาอ่อน และมัสก์ขาว ชวนน่าหลงใหลแบบไม่เลี่ยน ขวดใหญ่สำหรับฉีดผิวกายและเสื้อผ้า"
+  },
+  {
+    "id": "bs-confident-30",
+    "name": "น้ำหอมฉีดตัว Confident",
+    "mood": "confident",
+    "type": "spray",
+    "size": "30ml",
+    "price": 89,
+    "image": "images/confident.jpg",
+    "description": "กลิ่นหอมสุขุม นุ่มลึก มีเสน่ห์น่าค้นหา ด้วยกลิ่นไม้ซีดาร์ แอมเบอร์ และเครื่องเทศบางเบา เสริมบุคลิกให้ดูภูมิฐาน ขนาดพกพา"
+  },
+  {
+    "id": "bs-confident-100",
+    "name": "น้ำหอมฉีดตัว Confident",
+    "mood": "confident",
+    "type": "spray",
+    "size": "100ml",
+    "price": 199,
+    "image": "images/confident.jpg",
+    "description": "กลิ่นหอมสุขุม นุ่มลึก มีเสน่ห์น่าค้นหา ด้วยกลิ่นไม้ซีดาร์ แอมเบอร์ และเครื่องเทศบางเบา เสริมบุคลิกให้ดูภูมิฐาน ขวดใหญ่ใช้ได้นาน"
+  },
+  {
+    "id": "bs-romance-30",
+    "name": "น้ำหอมฉีดตัว Romance",
+    "mood": "romance",
+    "type": "spray",
+    "size": "30ml",
+    "price": 89,
+    "image": "images/romance.jpg",
+    "description": "กลิ่นหอมเย้ายวน อบอุ่น อ่อนโยน จากกุหลาบดามัสก์และผลไม้ตระกูลเบอร์รี สร้างบรรยากาศสุดพิเศษในทุกโอกาส ขนาดพกพา"
+  },
+  {
+    "id": "bs-romance-100",
+    "name": "น้ำหอมฉีดตัว Romance",
+    "mood": "romance",
+    "type": "spray",
+    "size": "100ml",
+    "price": 199,
+    "image": "images/romance.jpg",
+    "description": "กลิ่นหอมเย้ายวน อบอุ่น อ่อนโยน จากกุหลาบดามัสก์และผลไม้ตระกูลเบอร์รี สร้างบรรยากาศสุดพิเศษในทุกโอกาส ขวดใหญ่สุดคุ้ม"
+  },
+  {
+    "id": "bs-rollon-fresh",
+    "name": "โรลออน Fresh",
+    "mood": "fresh",
+    "type": "rollon",
+    "size": "50ml",
+    "price": 149,
+    "image": "images/fresh.jpg",
+    "description": "โรลออนระงับกลิ่นกายสูตรอ่อนโยน แห้งไว ไม่ทิ้งคราบเหลือง ผสานกลิ่นหอมสดชื่นสะอาดยาวนานตลอดวัน"
+  },
+  {
+    "id": "bs-rollon-sweet",
+    "name": "โรลออน Sweet",
+    "mood": "sweet",
+    "type": "rollon",
+    "size": "50ml",
+    "price": 149,
+    "image": "images/sweet.jpg",
+    "description": "โรลออนระงับกลิ่นกายสูตรอ่อนโยน บำรุงผิวใต้วงแขนให้เรียบเนียน พร้อมกลิ่นหอมหวานละมุนชวนหลงใหลตลอดวัน"
+  }
+]

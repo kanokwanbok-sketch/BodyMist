@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สั่งซื้อสินค้า — Body Scent</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .page-header {
+      padding: 72px 0 40px;
+      text-align: center;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .order-container {
+      max-width: 640px;
+      margin: 0 auto;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-light);
+      padding: 52px 48px;
+    }
+
+    .form-group {
+      margin-bottom: 26px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-bottom: 10px;
+    }
+
+    .form-label span {
+      color: var(--accent-gold);
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 13px 16px;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: var(--text-primary);
+      background-color: var(--bg-primary);
+      border: 1px solid var(--border-light);
+      border-radius: 0;
+      outline: none;
+      transition: var(--transition-smooth);
+    }
+
+    .form-control:focus {
+      border-color: var(--accent-gold);
+      background-color: var(--bg-card);
+    }
+
+    textarea.form-control {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .form-hint {
+      display: block;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+
+    .form-submit-wrap {
+      margin-top: 38px;
+      padding-top: 28px;
+      border-top: 1px solid var(--border-light);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: 1px solid var(--border-light);
+      padding: 6px 12px;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      color: var(--text-primary);
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .mobile-menu-btn {
+        display: inline-block;
+      }
+      .order-container {
+        padding: 36px 24px;
+      }
+      .form-submit-wrap {
+        flex-direction: column-reverse;
+        align-items: stretch;
+      }
+      .form-submit-wrap .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="brand-logo">Body <span>Scent</span></a>
+
+      <nav class="nav-links">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">คอลเลกชันสินค้า</a>
+        <a href="order.html" class="active">สั่งซื้อสินค้า</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="product.html" class="btn btn-sm">เลือกสินค้าเพิ่ม</a>
+        <button type="button" id="menuToggle" class="mobile-menu-btn" aria-label="เมนู">เมนู</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Title -->
+  <section class="page-header">
+    <div class="container">
+      <span class="section-subtitle">Direct Order</span>
+      <h1 class="section-title">แบบฟอร์มสั่งซื้อสินค้า</h1>
+      <p class="section-desc" style="margin-bottom: 0;">
+        กรอกรายละเอียดผู้รับและรายการสินค้าที่ต้องการ ทีมงานจะติดต่อกลับเพื่อยืนยันคำสั่งซื้อและแจ้งรายละเอียดการจัดส่ง
+      </p>
+    </div>
+  </section>
+
+  <!-- Order Form Section -->
+  <section class="section">
+    <div class="container">
+      <div class="order-container">
+        <form id="orderForm">
+          <div class="form-group">
+            <label for="customerName" class="form-label">ชื่อลูกค้า <span>*</span></label>
+            <input type="text" id="customerName" name="customerName" class="form-control" placeholder="ระบุชื่อ - นามสกุล" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact" class="form-label">เบอร์โทร / Line ID <span>*</span></label>
+            <input type="text" id="contact" name="contact" class="form-control" placeholder="เช่น 08X-XXX-XXXX หรือ Line: @yourid" required>
+          </div>
+
+          <div class="form-group">
+            <label for="items" class="form-label">รายการสินค้า <span>*</span></label>
+            <textarea id="items" name="items" class="form-control" placeholder="ระบุชื่อกลิ่น ขนาด และจำนวนที่ต้องการ" required></textarea>
+            <span class="form-hint">สามารถพิมพ์เพิ่มรายการหรือแก้ไขจำนวนได้ตามต้องการ</span>
+          </div>
+
+          <div class="form-group">
+            <label for="total" class="form-label">จำนวนเงินรวม (บาท) <span>*</span></label>
+            <input type="number" id="total" name="total" class="form-control" placeholder="0" min="0" step="1" required>
+          </div>
+
+          <div class="form-group">
+            <label for="note" class="form-label">หมายเหตุ (ที่อยู่จัดส่ง / ข้อความเพิ่มเติม)</label>
+            <textarea id="note" name="note" class="form-control" placeholder="ระบุที่อยู่สำหรับจัดส่ง หรือข้อความถึงร้านค้า (ถ้ามี)"></textarea>
+          </div>
+
+          <div class="form-submit-wrap">
+            <a href="product.html" style="font-size: 0.85rem; color: var(--text-secondary);">← กลับไปเลือกสินค้า</a>
+            <button type="submit" class="btn btn-solid">ยืนยันสั่งซื้อ</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo">Body <span>Scent</span></a>
+          <p>
+            เติมเต็มทุกความรู้สึกในแบบของคุณ ด้วยกลิ่นหอมที่ออกแบบมาเพื่อเข้ากับทุกอารมณ์ในแต่ละวัน
+          </p>
+        </div>
+
+        <div>
+          <h4>คอลเลกชัน</h4>
+          <ul>
+            <li><a href="product.html?mood=fresh">Fresh — สดชื่น</a></li>
+            <li><a href="product.html?mood=sweet">Sweet — หวานละมุน</a></li>
+            <li><a href="product.html?mood=confident">Confident — มั่นใจ</a></li>
+            <li><a href="product.html?mood=romance">Romance — โรแมนติก</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>เมนูหลัก</h4>
+          <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="product.html">สินค้าทั้งหมด</a></li>
+            <li><a href="order.html">สั่งซื้อสินค้า</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 BODY SCENT. ALL RIGHTS RESERVED.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

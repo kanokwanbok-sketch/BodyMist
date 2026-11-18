@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ขอบคุณสำหรับคำสั่งซื้อ — Body Scent</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .thankyou-section {
+      min-height: calc(100vh - 82px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 0;
+    }
+
+    .thankyou-box {
+      max-width: 560px;
+      width: 90%;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-light);
+      padding: 64px 44px;
+      text-align: center;
+    }
+
+    .thankyou-divider {
+      width: 40px;
+      height: 1px;
+      background-color: var(--accent-gold);
+      margin: 24px auto;
+    }
+
+    .thankyou-text {
+      color: var(--text-secondary);
+      font-size: 0.96rem;
+      margin-bottom: 40px;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: 1px solid var(--border-light);
+      padding: 6px 12px;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      color: var(--text-primary);
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .mobile-menu-btn {
+        display: inline-block;
+      }
+      .thankyou-box {
+        padding: 48px 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="brand-logo">Body <span>Scent</span></a>
+
+      <nav class="nav-links">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">คอลเลกชันสินค้า</a>
+        <a href="order.html">สั่งซื้อสินค้า</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="product.html" class="btn btn-sm">เลือกกลิ่นหอม</a>
+        <button type="button" id="menuToggle" class="mobile-menu-btn" aria-label="เมนู">เมนู</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Thank You Message -->
+  <main class="thankyou-section">
+    <div class="thankyou-box">
+      <span class="section-subtitle">Order Confirmed</span>
+      <h1 class="section-title" style="margin-bottom: 0;">ขอบคุณที่ไว้วางใจ Body Scent</h1>
+      <div class="thankyou-divider"></div>
+      <p class="thankyou-text">
+        เราได้รับข้อมูลคำสั่งซื้อของคุณเรียบร้อยแล้ว ทีมงานจะรีบตรวจสอบรายการและติดต่อกลับตามช่องทางที่คุณระบุไว้โดยเร็วที่สุด
+      </p>
+      <a href="index.html" class="btn">กลับหน้าแรก</a>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
